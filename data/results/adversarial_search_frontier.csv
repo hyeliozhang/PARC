@@ -1,0 +1,7 @@
+search_case,operator_mix,budget,attack_mode,trust_alpha,parc_integrated_quality,dependency_truth_integrated_quality,parc_minus_dependency_truth_iq,parc_aggregate_distortion,dependency_truth_aggregate_distortion,parc_minus_dependency_truth_distortion,parc_within_001_of_best_iq,parc_within_001_of_best_distortion
+0,duplicate+provenance+trust,0.15,coordinated,0.5,0.9935064935064936,0.9935064935064936,0.0,0.026027087325194695,0.026027087325194695,0.0,True,False
+1,schema+fd+outlier,0.2,coordinated,1.0,0.9922077922077922,0.9915584415584415,0.0006493506493506773,0.026641794655812265,0.027161452546841425,-0.0005196578910291599,True,False
+2,key+duplicate+schema+provenance,0.25,coordinated,0.5,0.9716056670602126,0.9703187721369539,0.001286894923258619,0.0015069322842990573,0.00840894428641155,-0.006902012002112493,True,True
+3,key+fd+trust+provenance+outlier,0.3,coordinated,1.0,0.9948051948051948,0.9948051948051948,0.0,0.018407879621899572,0.018407879621899572,0.0,True,True
+4,duplicate+fd+key+name+outlier+provenance+schema+trust,0.35,coordinated,0.5,0.9166292798110979,0.9172579693034236,-0.0006286894923257513,0.04270649070086688,0.05486326721484836,-0.012156776513981483,True,True
+5,duplicate+fd+name+provenance+trust,0.15,independent,1.0,1.0,1.0,0.0,0.0,0.0,0.0,True,True

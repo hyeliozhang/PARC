@@ -1,0 +1,1670 @@
+{
+  "attack": {
+    "target_entities": [
+      8,
+      9,
+      15,
+      16,
+      18,
+      26,
+      33,
+      34,
+      58,
+      71,
+      72,
+      73
+    ],
+    "attacker_sources": [
+      "S00",
+      "S01",
+      "S02"
+    ],
+    "schema_sources": [
+      "S00"
+    ],
+    "budget": 0.2,
+    "mode": "coordinated",
+    "operators": [
+      "duplicate",
+      "fd",
+      "key",
+      "name",
+      "outlier",
+      "provenance",
+      "schema",
+      "trust"
+    ],
+    "trust_alpha": 1.0,
+    "n_attacked_records": 379,
+    "n_duplicates": 102
+  },
+  "details": {
+    "no_repair": {
+      "method": "no_repair",
+      "runtime_sec": 0.1532991380000226,
+      "n_output_rows": 300,
+      "suppressed_clusters": 0,
+      "dependency_groups": {
+        "S00": "S00",
+        "S01": "S01",
+        "S02": "S02",
+        "S03": "S03",
+        "S04": "S04",
+        "S05": "S05",
+        "S06": "S06",
+        "S07": "S07",
+        "S08": "S08",
+        "S09": "S09",
+        "S10": "S10",
+        "S11": "S11"
+      },
+      "schema_actions": {},
+      "source_weights": {
+        "S00": 1.0,
+        "S01": 1.0,
+        "S02": 1.0,
+        "S03": 1.0,
+        "S04": 1.0,
+        "S05": 1.0,
+        "S06": 1.0,
+        "S07": 1.0,
+        "S08": 1.0,
+        "S09": 1.0,
+        "S10": 1.0,
+        "S11": 1.0
+      },
+      "certificate_sample": {
+        "K:E00000": {
+          "record_count": 7,
+          "source_count": 7,
+          "cells": {}
+        }
+      }
+    },
+    "majority": {
+      "method": "majority",
+      "runtime_sec": 0.21480203799995934,
+      "n_output_rows": 300,
+      "suppressed_clusters": 0,
+      "dependency_groups": {
+        "S00": "S00",
+        "S01": "S01",
+        "S02": "S02",
+        "S03": "S03",
+        "S04": "S04",
+        "S05": "S05",
+        "S06": "S06",
+        "S07": "S07",
+        "S08": "S08",
+        "S09": "S09",
+        "S10": "S10",
+        "S11": "S11"
+      },
+      "schema_actions": {},
+      "source_weights": {
+        "S00": 1.0,
+        "S01": 1.0,
+        "S02": 1.0,
+        "S03": 1.0,
+        "S04": 1.0,
+        "S05": 1.0,
+        "S06": 1.0,
+        "S07": 1.0,
+        "S08": 1.0,
+        "S09": 1.0,
+        "S10": 1.0,
+        "S11": 1.0
+      },
+      "certificate_sample": {
+        "K:E00000": {
+          "cells": {
+            "name": {
+              "attribute": "name",
+              "accepted": "Aster Market 0000",
+              "margin": 5.0,
+              "top_score": 6.0,
+              "second_score": 1.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "Aster Market 0000": 6.0,
+                "AsterMarket0000": 1.0
+              }
+            },
+            "city": {
+              "attribute": "city",
+              "accepted": "OH_city_07",
+              "margin": 7.0,
+              "top_score": 7.0,
+              "second_score": 0.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "OH_city_07": 7.0
+              }
+            },
+            "state": {
+              "attribute": "state",
+              "accepted": "OH",
+              "margin": 5.0,
+              "top_score": 6.0,
+              "second_score": 1.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "OH": 6.0,
+                "GA": 1.0
+              }
+            },
+            "zip": {
+              "attribute": "zip",
+              "accepted": "10607",
+              "margin": 5.0,
+              "top_score": 6.0,
+              "second_score": 1.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "10607": 6.0,
+                "10640": 1.0
+              }
+            },
+            "category": {
+              "attribute": "category",
+              "accepted": "furniture",
+              "margin": 5.0,
+              "top_score": 6.0,
+              "second_score": 1.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "furniture": 6.0,
+                "auto": 1.0
+              }
+            },
+            "revenue": {
+              "attribute": "revenue",
+              "accepted": 287092,
+              "margin": 4.0,
+              "top_score": 5.0,
+              "second_score": 1.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "287092": 5.0,
+                "267061": 1.0,
+                "3": 1.0
+              }
+            },
+            "employees": {
+              "attribute": "employees",
+              "accepted": 3,
+              "margin": 5.0,
+              "top_score": 6.0,
+              "second_score": 1.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "3": 6.0,
+                "333710": 1.0
+              }
+            }
+          },
+          "source_count": 7,
+          "record_count": 7,
+          "constraint_actions": []
+        }
+      }
+    },
+    "standard_fd": {
+      "method": "standard_fd",
+      "runtime_sec": 0.2066458250000096,
+      "n_output_rows": 300,
+      "suppressed_clusters": 0,
+      "dependency_groups": {
+        "S00": "S00",
+        "S01": "S01",
+        "S02": "S02",
+        "S03": "S03",
+        "S04": "S04",
+        "S05": "S05",
+        "S06": "S06",
+        "S07": "S07",
+        "S08": "S08",
+        "S09": "S09",
+        "S10": "S10",
+        "S11": "S11"
+      },
+      "schema_actions": {},
+      "source_weights": {
+        "S00": 1.0,
+        "S01": 1.0,
+        "S02": 1.0,
+        "S03": 1.0,
+        "S04": 1.0,
+        "S05": 1.0,
+        "S06": 1.0,
+        "S07": 1.0,
+        "S08": 1.0,
+        "S09": 1.0,
+        "S10": 1.0,
+        "S11": 1.0
+      },
+      "certificate_sample": {
+        "K:E00000": {
+          "cells": {
+            "name": {
+              "attribute": "name",
+              "accepted": "Aster Market 0000",
+              "margin": 5.0,
+              "top_score": 6.0,
+              "second_score": 1.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "Aster Market 0000": 6.0,
+                "AsterMarket0000": 1.0
+              }
+            },
+            "city": {
+              "attribute": "city",
+              "accepted": "OH_city_07",
+              "margin": 7.0,
+              "top_score": 7.0,
+              "second_score": 0.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "OH_city_07": 7.0
+              }
+            },
+            "state": {
+              "attribute": "state",
+              "accepted": "OH",
+              "margin": 5.0,
+              "top_score": 6.0,
+              "second_score": 1.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "OH": 6.0,
+                "GA": 1.0
+              }
+            },
+            "zip": {
+              "attribute": "zip",
+              "accepted": "10607",
+              "margin": 5.0,
+              "top_score": 6.0,
+              "second_score": 1.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "10607": 6.0,
+                "10640": 1.0
+              }
+            },
+            "category": {
+              "attribute": "category",
+              "accepted": "furniture",
+              "margin": 5.0,
+              "top_score": 6.0,
+              "second_score": 1.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "furniture": 6.0,
+                "auto": 1.0
+              }
+            },
+            "revenue": {
+              "attribute": "revenue",
+              "accepted": 287092,
+              "margin": 4.0,
+              "top_score": 5.0,
+              "second_score": 1.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "287092": 5.0,
+                "267061": 1.0,
+                "3": 1.0
+              }
+            },
+            "employees": {
+              "attribute": "employees",
+              "accepted": 3,
+              "margin": 5.0,
+              "top_score": 6.0,
+              "second_score": 1.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "3": 6.0,
+                "333710": 1.0
+              }
+            }
+          },
+          "source_count": 7,
+          "record_count": 7,
+          "constraint_actions": []
+        }
+      }
+    },
+    "rule_only": {
+      "method": "rule_only",
+      "runtime_sec": 0.18168706500000553,
+      "n_output_rows": 300,
+      "suppressed_clusters": 0,
+      "dependency_groups": {
+        "S00": "S00",
+        "S01": "S01",
+        "S02": "S02",
+        "S03": "S03",
+        "S04": "S04",
+        "S05": "S05",
+        "S06": "S06",
+        "S07": "S07",
+        "S08": "S08",
+        "S09": "S09",
+        "S10": "S10",
+        "S11": "S11"
+      },
+      "schema_actions": {},
+      "source_weights": {
+        "S00": 1.0,
+        "S01": 1.0,
+        "S02": 1.0,
+        "S03": 1.0,
+        "S04": 1.0,
+        "S05": 1.0,
+        "S06": 1.0,
+        "S07": 1.0,
+        "S08": 1.0,
+        "S09": 1.0,
+        "S10": 1.0,
+        "S11": 1.0
+      },
+      "certificate_sample": {
+        "K:E00000": {
+          "cells": {
+            "name": {
+              "attribute": "name",
+              "accepted": "Aster Market 0000",
+              "margin": 5.0,
+              "top_score": 6.0,
+              "second_score": 1.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "Aster Market 0000": 6.0,
+                "AsterMarket0000": 1.0
+              }
+            },
+            "city": {
+              "attribute": "city",
+              "accepted": "OH_city_07",
+              "margin": 7.0,
+              "top_score": 7.0,
+              "second_score": 0.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "OH_city_07": 7.0
+              }
+            },
+            "state": {
+              "attribute": "state",
+              "accepted": "OH",
+              "margin": 5.0,
+              "top_score": 6.0,
+              "second_score": 1.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "OH": 6.0,
+                "GA": 1.0
+              }
+            },
+            "zip": {
+              "attribute": "zip",
+              "accepted": "10607",
+              "margin": 5.0,
+              "top_score": 6.0,
+              "second_score": 1.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "10607": 6.0,
+                "10640": 1.0
+              }
+            },
+            "category": {
+              "attribute": "category",
+              "accepted": "furniture",
+              "margin": 5.0,
+              "top_score": 6.0,
+              "second_score": 1.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "furniture": 6.0,
+                "auto": 1.0
+              }
+            },
+            "revenue": {
+              "attribute": "revenue",
+              "accepted": 287092,
+              "margin": 4.0,
+              "top_score": 5.0,
+              "second_score": 1.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "287092": 5.0,
+                "267061": 1.0,
+                "3": 1.0
+              }
+            },
+            "employees": {
+              "attribute": "employees",
+              "accepted": 3,
+              "margin": 5.0,
+              "top_score": 6.0,
+              "second_score": 1.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "3": 6.0,
+                "333710": 1.0
+              }
+            }
+          },
+          "source_count": 7,
+          "record_count": 7,
+          "constraint_actions": []
+        }
+      }
+    },
+    "random_weighting": {
+      "method": "random_weighting",
+      "runtime_sec": 0.17480856999998196,
+      "n_output_rows": 300,
+      "suppressed_clusters": 0,
+      "dependency_groups": {
+        "S00": "S00",
+        "S01": "S01",
+        "S02": "S02",
+        "S03": "S03",
+        "S04": "S04",
+        "S05": "S05",
+        "S06": "S06",
+        "S07": "S07",
+        "S08": "S08",
+        "S09": "S09",
+        "S10": "S10",
+        "S11": "S11"
+      },
+      "schema_actions": {},
+      "source_weights": {
+        "S00": 1.7739,
+        "S01": 1.0396,
+        "S02": 0.5819,
+        "S03": 0.5331,
+        "S04": 2.1265,
+        "S05": 2.3255,
+        "S06": 1.7133,
+        "S07": 1.959,
+        "S08": 1.5872,
+        "S09": 2.3701,
+        "S10": 2.1317,
+        "S11": 0.5055
+      },
+      "certificate_sample": {
+        "K:E00000": {
+          "cells": {
+            "name": {
+              "attribute": "name",
+              "accepted": "Aster Market 0000",
+              "margin": 5.9807104345051405,
+              "top_score": 7.9397035564731375,
+              "second_score": 1.9589931219679968,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "Aster Market 0000": 7.9397035564731375,
+                "AsterMarket0000": 1.9589931219679968
+              }
+            },
+            "city": {
+              "attribute": "city",
+              "accepted": "OH_city_07",
+              "margin": 9.898696678441134,
+              "top_score": 9.898696678441134,
+              "second_score": 0.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "OH_city_07": 9.898696678441134
+              }
+            },
+            "state": {
+              "attribute": "state",
+              "accepted": "OH",
+              "margin": 6.350849929155318,
+              "top_score": 8.124773303798227,
+              "second_score": 1.7739233746429086,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "OH": 8.124773303798227,
+                "GA": 1.7739233746429086
+              }
+            },
+            "zip": {
+              "attribute": "zip",
+              "accepted": "10607",
+              "margin": 8.734802582696355,
+              "top_score": 9.316749630568745,
+              "second_score": 0.5819470478723894,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "10607": 9.316749630568745,
+                "10640": 0.5819470478723894
+              }
+            },
+            "category": {
+              "attribute": "category",
+              "accepted": "furniture",
+              "margin": 6.350849929155318,
+              "top_score": 8.124773303798227,
+              "second_score": 1.7739233746429086,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "furniture": 8.124773303798227,
+                "auto": 1.7739233746429086
+              }
+            },
+            "revenue": {
+              "attribute": "revenue",
+              "accepted": 287092,
+              "margin": 3.4737509946873386,
+              "top_score": 5.799262149242782,
+              "second_score": 2.3255111545554437,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "287092": 5.799262149242782,
+                "267061": 2.3255111545554437,
+                "3": 1.7739233746429086
+              }
+            },
+            "employees": {
+              "attribute": "employees",
+              "accepted": 3,
+              "margin": 6.350849929155318,
+              "top_score": 8.124773303798227,
+              "second_score": 1.7739233746429086,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "3": 8.124773303798227,
+                "333710": 1.7739233746429086
+              }
+            }
+          },
+          "source_count": 7,
+          "record_count": 7,
+          "constraint_actions": []
+        }
+      }
+    },
+    "outlier_removal": {
+      "method": "outlier_removal",
+      "runtime_sec": 0.2832117359999984,
+      "n_output_rows": 300,
+      "suppressed_clusters": 0,
+      "dependency_groups": {
+        "S00": "S00",
+        "S01": "S01",
+        "S02": "S02",
+        "S03": "S03",
+        "S04": "S04",
+        "S05": "S05",
+        "S06": "S06",
+        "S07": "S07",
+        "S08": "S08",
+        "S09": "S09",
+        "S10": "S10",
+        "S11": "S11"
+      },
+      "schema_actions": {},
+      "source_weights": {
+        "S00": 1.0,
+        "S01": 1.0,
+        "S02": 1.0,
+        "S03": 1.0,
+        "S04": 1.0,
+        "S05": 1.0,
+        "S06": 1.0,
+        "S07": 1.0,
+        "S08": 1.0,
+        "S09": 1.0,
+        "S10": 1.0,
+        "S11": 1.0
+      },
+      "certificate_sample": {
+        "K:E00000": {
+          "cells": {
+            "name": {
+              "attribute": "name",
+              "accepted": "Aster Market 0000",
+              "margin": 5.0,
+              "top_score": 6.0,
+              "second_score": 1.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "Aster Market 0000": 6.0,
+                "AsterMarket0000": 1.0
+              }
+            },
+            "city": {
+              "attribute": "city",
+              "accepted": "OH_city_07",
+              "margin": 7.0,
+              "top_score": 7.0,
+              "second_score": 0.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "OH_city_07": 7.0
+              }
+            },
+            "state": {
+              "attribute": "state",
+              "accepted": "OH",
+              "margin": 5.0,
+              "top_score": 6.0,
+              "second_score": 1.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "OH": 6.0,
+                "GA": 1.0
+              }
+            },
+            "zip": {
+              "attribute": "zip",
+              "accepted": "10607",
+              "margin": 5.0,
+              "top_score": 6.0,
+              "second_score": 1.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "10607": 6.0,
+                "10640": 1.0
+              }
+            },
+            "category": {
+              "attribute": "category",
+              "accepted": "furniture",
+              "margin": 5.0,
+              "top_score": 6.0,
+              "second_score": 1.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "furniture": 6.0,
+                "auto": 1.0
+              }
+            },
+            "revenue": {
+              "attribute": "revenue",
+              "accepted": 287092,
+              "margin": 4.0,
+              "top_score": 5.0,
+              "second_score": 1.0,
+              "independent_groups": 6,
+              "filtered_claims": 1,
+              "candidates": {
+                "287092": 5.0,
+                "267061": 1.0
+              }
+            },
+            "employees": {
+              "attribute": "employees",
+              "accepted": 3,
+              "margin": 6.0,
+              "top_score": 6.0,
+              "second_score": 0.0,
+              "independent_groups": 6,
+              "filtered_claims": 1,
+              "candidates": {
+                "3": 6.0
+              }
+            }
+          },
+          "source_count": 7,
+          "record_count": 7,
+          "constraint_actions": []
+        }
+      }
+    },
+    "provenance_unaware": {
+      "method": "provenance_unaware",
+      "runtime_sec": 0.17375538100003496,
+      "n_output_rows": 300,
+      "suppressed_clusters": 0,
+      "dependency_groups": {
+        "S00": "S00",
+        "S01": "S01",
+        "S02": "S02",
+        "S03": "S03",
+        "S04": "S04",
+        "S05": "S05",
+        "S06": "S06",
+        "S07": "S07",
+        "S08": "S08",
+        "S09": "S09",
+        "S10": "S10",
+        "S11": "S11"
+      },
+      "schema_actions": {},
+      "source_weights": {
+        "S00": 3.0898,
+        "S01": 2.783,
+        "S02": 2.9293,
+        "S03": 1.5598,
+        "S04": 3.8918,
+        "S05": 0.3793,
+        "S06": 1.9808,
+        "S07": 1.6449,
+        "S08": 2.2226,
+        "S09": 0.5797,
+        "S10": 0.3486,
+        "S11": 3.8918
+      },
+      "certificate_sample": {
+        "K:E00000": {
+          "cells": {
+            "name": {
+              "attribute": "name",
+              "accepted": "Aster Market 0000",
+              "margin": 13.409115974555444,
+              "top_score": 15.054057597131367,
+              "second_score": 1.6449416225759224,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "Aster Market 0000": 15.054057597131367,
+                "AsterMarket0000": 1.6449416225759224
+              }
+            },
+            "city": {
+              "attribute": "city",
+              "accepted": "OH_city_07",
+              "margin": 16.69899921970729,
+              "top_score": 16.69899921970729,
+              "second_score": 0.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "OH_city_07": 16.69899921970729
+              }
+            },
+            "state": {
+              "attribute": "state",
+              "accepted": "OH",
+              "margin": 10.519327405856856,
+              "top_score": 13.609163312782073,
+              "second_score": 3.0898359069252157,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "OH": 13.609163312782073,
+                "GA": 3.0898359069252157
+              }
+            },
+            "zip": {
+              "attribute": "zip",
+              "accepted": "10607",
+              "margin": 10.840450661688308,
+              "top_score": 13.769724940697799,
+              "second_score": 2.929274279009491,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "10607": 13.769724940697799,
+                "10640": 2.929274279009491
+              }
+            },
+            "category": {
+              "attribute": "category",
+              "accepted": "furniture",
+              "margin": 10.519327405856856,
+              "top_score": 13.609163312782073,
+              "second_score": 3.0898359069252157,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "furniture": 13.609163312782073,
+                "auto": 3.0898359069252157
+              }
+            },
+            "revenue": {
+              "attribute": "revenue",
+              "accepted": 287092,
+              "margin": 10.140048222313727,
+              "top_score": 13.229884129238943,
+              "second_score": 3.0898359069252157,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "287092": 13.229884129238943,
+                "3": 3.0898359069252157,
+                "267061": 0.37927918354312945
+              }
+            },
+            "employees": {
+              "attribute": "employees",
+              "accepted": 3,
+              "margin": 10.519327405856856,
+              "top_score": 13.609163312782073,
+              "second_score": 3.0898359069252157,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "3": 13.609163312782073,
+                "333710": 3.0898359069252157
+              }
+            }
+          },
+          "source_count": 7,
+          "record_count": 7,
+          "constraint_actions": []
+        }
+      }
+    },
+    "iterative_truth": {
+      "method": "iterative_truth",
+      "runtime_sec": 0.4411485610000341,
+      "n_output_rows": 300,
+      "suppressed_clusters": 0,
+      "dependency_groups": {
+        "S00": "S00",
+        "S01": "S01",
+        "S02": "S02",
+        "S03": "S03",
+        "S04": "S04",
+        "S05": "S05",
+        "S06": "S06",
+        "S07": "S07",
+        "S08": "S08",
+        "S09": "S09",
+        "S10": "S10",
+        "S11": "S11"
+      },
+      "schema_actions": {},
+      "source_weights": {
+        "S00": 0.3659,
+        "S01": 1.1496,
+        "S02": 1.0136,
+        "S05": 0.4375,
+        "S06": 1.3919,
+        "S07": 1.1743,
+        "S11": 1.8335,
+        "S03": 1.1936,
+        "S04": 1.7893,
+        "S08": 1.4484,
+        "S10": 0.4169,
+        "S09": 0.502
+      },
+      "certificate_sample": {
+        "K:E00000": {
+          "cells": {
+            "name": {
+              "attribute": "name",
+              "accepted": "Aster Market 0000",
+              "margin": 5.01765537547483,
+              "top_score": 6.191972966408247,
+              "second_score": 1.174317590933416,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "Aster Market 0000": 6.191972966408247,
+                "AsterMarket0000": 1.174317590933416
+              }
+            },
+            "city": {
+              "attribute": "city",
+              "accepted": "OH_city_07",
+              "margin": 7.366290557341663,
+              "top_score": 7.366290557341663,
+              "second_score": 0.0,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "OH_city_07": 7.366290557341663
+              }
+            },
+            "state": {
+              "attribute": "state",
+              "accepted": "OH",
+              "margin": 6.634505885965158,
+              "top_score": 7.00039822165341,
+              "second_score": 0.36589233568825213,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "OH": 7.00039822165341,
+                "GA": 0.36589233568825213
+              }
+            },
+            "zip": {
+              "attribute": "zip",
+              "accepted": "10607",
+              "margin": 5.339113768321047,
+              "top_score": 6.3527021628313545,
+              "second_score": 1.013588394510308,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "10607": 6.3527021628313545,
+                "10640": 1.013588394510308
+              }
+            },
+            "category": {
+              "attribute": "category",
+              "accepted": "furniture",
+              "margin": 6.634505885965158,
+              "top_score": 7.00039822165341,
+              "second_score": 0.36589233568825213,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "furniture": 7.00039822165341,
+                "auto": 0.36589233568825213
+              }
+            },
+            "revenue": {
+              "attribute": "revenue",
+              "accepted": 287092,
+              "margin": 6.125464859801617,
+              "top_score": 6.562931540727513,
+              "second_score": 0.4374666809258971,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "287092": 6.562931540727513,
+                "267061": 0.4374666809258971,
+                "3": 0.36589233568825213
+              }
+            },
+            "employees": {
+              "attribute": "employees",
+              "accepted": 3,
+              "margin": 6.634505885965158,
+              "top_score": 7.00039822165341,
+              "second_score": 0.36589233568825213,
+              "independent_groups": 7,
+              "filtered_claims": 0,
+              "candidates": {
+                "3": 7.00039822165341,
+                "333710": 0.36589233568825213
+              }
+            }
+          },
+          "source_count": 7,
+          "record_count": 7,
+          "constraint_actions": []
+        }
+      }
+    },
+    "source_dependence": {
+      "method": "source_dependence",
+      "runtime_sec": 0.2562062139999739,
+      "n_output_rows": 300,
+      "suppressed_clusters": 0,
+      "dependency_groups": {
+        "S00": "S00",
+        "S01": "S01",
+        "S02": "S00",
+        "S03": "S03",
+        "S04": "S03",
+        "S05": "S03",
+        "S06": "S06",
+        "S07": "S06",
+        "S08": "S06",
+        "S09": "S09",
+        "S10": "S10",
+        "S11": "S11"
+      },
+      "schema_actions": {},
+      "source_weights": {
+        "S00": 1.0,
+        "S01": 1.0,
+        "S02": 1.0,
+        "S03": 1.0,
+        "S04": 1.0,
+        "S05": 1.0,
+        "S06": 1.0,
+        "S07": 1.0,
+        "S08": 1.0,
+        "S09": 1.0,
+        "S10": 1.0,
+        "S11": 1.0
+      },
+      "certificate_sample": {
+        "K:E00000": {
+          "cells": {
+            "name": {
+              "attribute": "name",
+              "accepted": "Aster Market 0000",
+              "margin": 4.0,
+              "top_score": 5.0,
+              "second_score": 1.0,
+              "independent_groups": 5,
+              "filtered_claims": 0,
+              "candidates": {
+                "Aster Market 0000": 5.0,
+                "AsterMarket0000": 1.0
+              }
+            },
+            "city": {
+              "attribute": "city",
+              "accepted": "OH_city_07",
+              "margin": 5.0,
+              "top_score": 5.0,
+              "second_score": 0.0,
+              "independent_groups": 5,
+              "filtered_claims": 0,
+              "candidates": {
+                "OH_city_07": 5.0
+              }
+            },
+            "state": {
+              "attribute": "state",
+              "accepted": "OH",
+              "margin": 4.0,
+              "top_score": 5.0,
+              "second_score": 1.0,
+              "independent_groups": 5,
+              "filtered_claims": 0,
+              "candidates": {
+                "OH": 5.0,
+                "GA": 1.0
+              }
+            },
+            "zip": {
+              "attribute": "zip",
+              "accepted": "10607",
+              "margin": 4.0,
+              "top_score": 5.0,
+              "second_score": 1.0,
+              "independent_groups": 5,
+              "filtered_claims": 0,
+              "candidates": {
+                "10607": 5.0,
+                "10640": 1.0
+              }
+            },
+            "category": {
+              "attribute": "category",
+              "accepted": "furniture",
+              "margin": 4.0,
+              "top_score": 5.0,
+              "second_score": 1.0,
+              "independent_groups": 5,
+              "filtered_claims": 0,
+              "candidates": {
+                "furniture": 5.0,
+                "auto": 1.0
+              }
+            },
+            "revenue": {
+              "attribute": "revenue",
+              "accepted": 287092,
+              "margin": 0.0,
+              "top_score": 1.0,
+              "second_score": 1.0,
+              "independent_groups": 5,
+              "filtered_claims": 0,
+              "candidates": {
+                "267061": 1.0,
+                "287092": 1.0,
+                "3": 1.0
+              }
+            },
+            "employees": {
+              "attribute": "employees",
+              "accepted": 3,
+              "margin": 0.0,
+              "top_score": 1.0,
+              "second_score": 1.0,
+              "independent_groups": 5,
+              "filtered_claims": 0,
+              "candidates": {
+                "3": 1.0,
+                "333710": 1.0
+              }
+            }
+          },
+          "source_count": 7,
+          "record_count": 7,
+          "constraint_actions": []
+        }
+      }
+    },
+    "dependency_truth": {
+      "method": "dependency_truth",
+      "runtime_sec": 0.6220824100000186,
+      "n_output_rows": 300,
+      "suppressed_clusters": 0,
+      "dependency_groups": {
+        "S00": "S00",
+        "S01": "S01",
+        "S02": "S00",
+        "S03": "S03",
+        "S04": "S03",
+        "S05": "S03",
+        "S06": "S06",
+        "S07": "S06",
+        "S08": "S06",
+        "S09": "S09",
+        "S10": "S10",
+        "S11": "S11"
+      },
+      "schema_actions": {},
+      "source_weights": {
+        "S00": 0.2799,
+        "S01": 1.1003,
+        "S02": 0.9645,
+        "S05": 0.4563,
+        "S06": 1.432,
+        "S07": 1.2055,
+        "S11": 1.9151,
+        "S03": 1.2267,
+        "S04": 1.8459,
+        "S08": 1.5227,
+        "S10": 0.4411,
+        "S09": 0.524
+      },
+      "certificate_sample": {
+        "K:E00000": {
+          "cells": {
+            "name": {
+              "attribute": "name",
+              "accepted": "Aster Market 0000",
+              "margin": 4.662748800500983,
+              "top_score": 5.868220246781972,
+              "second_score": 1.205471446280988,
+              "independent_groups": 5,
+              "filtered_claims": 0,
+              "candidates": {
+                "Aster Market 0000": 5.868220246781972,
+                "AsterMarket0000": 1.205471446280988
+              }
+            },
+            "city": {
+              "attribute": "city",
+              "accepted": "OH_city_07",
+              "margin": 5.868220246781972,
+              "top_score": 5.868220246781972,
+              "second_score": 0.0,
+              "independent_groups": 5,
+              "filtered_claims": 0,
+              "candidates": {
+                "OH_city_07": 5.868220246781972
+              }
+            },
+            "state": {
+              "attribute": "state",
+              "accepted": "OH",
+              "margin": 5.588313231548187,
+              "top_score": 5.868220246781972,
+              "second_score": 0.2799070152337845,
+              "independent_groups": 5,
+              "filtered_claims": 0,
+              "candidates": {
+                "OH": 5.868220246781972,
+                "GA": 0.2799070152337845
+              }
+            },
+            "zip": {
+              "attribute": "zip",
+              "accepted": "10607",
+              "margin": 4.219097516304596,
+              "top_score": 5.183612389160176,
+              "second_score": 0.9645148728555798,
+              "independent_groups": 5,
+              "filtered_claims": 0,
+              "candidates": {
+                "10607": 5.183612389160176,
+                "10640": 0.9645148728555798
+              }
+            },
+            "category": {
+              "attribute": "category",
+              "accepted": "furniture",
+              "margin": 5.588313231548187,
+              "top_score": 5.868220246781972,
+              "second_score": 0.2799070152337845,
+              "independent_groups": 5,
+              "filtered_claims": 0,
+              "candidates": {
+                "furniture": 5.868220246781972,
+                "auto": 0.2799070152337845
+              }
+            },
+            "revenue": {
+              "attribute": "revenue",
+              "accepted": 287092,
+              "margin": 1.4587177227551642,
+              "top_score": 1.915064633490503,
+              "second_score": 0.45634691073533884,
+              "independent_groups": 5,
+              "filtered_claims": 1,
+              "candidates": {
+                "287092": 1.915064633490503,
+                "267061": 0.45634691073533884
+              }
+            },
+            "employees": {
+              "attribute": "employees",
+              "accepted": 3,
+              "margin": 1.915064633490503,
+              "top_score": 1.915064633490503,
+              "second_score": 0.0,
+              "independent_groups": 5,
+              "filtered_claims": 1,
+              "candidates": {
+                "3": 1.915064633490503
+              }
+            }
+          },
+          "source_count": 7,
+          "record_count": 7,
+          "constraint_actions": []
+        }
+      }
+    },
+    "parc": {
+      "method": "parc",
+      "runtime_sec": 0.6857797069999947,
+      "n_output_rows": 300,
+      "suppressed_clusters": 0,
+      "dependency_groups": {
+        "S00": "S00",
+        "S01": "S01",
+        "S02": "S00",
+        "S03": "S03",
+        "S04": "S03",
+        "S05": "S03",
+        "S06": "S06",
+        "S07": "S06",
+        "S08": "S06",
+        "S09": "S09",
+        "S10": "S10",
+        "S11": "S11"
+      },
+      "schema_actions": {
+        "S00": {
+          "median_revenue": 1.0,
+          "median_employees": 327413.5,
+          "action": "swap revenue/employees",
+          "rows_repaired": 113
+        }
+      },
+      "source_weights": {
+        "S00": 0.5214,
+        "S01": 1.1035,
+        "S02": 0.9645,
+        "S05": 0.4579,
+        "S06": 1.4371,
+        "S07": 1.2074,
+        "S11": 1.912,
+        "S03": 1.2267,
+        "S04": 1.8459,
+        "S08": 1.5227,
+        "S10": 0.4456,
+        "S09": 0.524
+      },
+      "certificate_sample": {
+        "K:E00000": {
+          "cells": {
+            "name": {
+              "attribute": "name",
+              "accepted": "Aster Market 0000",
+              "margin": 4.667595647471915,
+              "top_score": 5.8750315758163545,
+              "second_score": 1.2074359283444394,
+              "independent_groups": 5,
+              "filtered_claims": 0,
+              "candidates": {
+                "Aster Market 0000": 5.8750315758163545,
+                "AsterMarket0000": 1.2074359283444394
+              }
+            },
+            "city": {
+              "attribute": "city",
+              "accepted": "OH_city_07",
+              "margin": 5.8750315758163545,
+              "top_score": 5.8750315758163545,
+              "second_score": 0.0,
+              "independent_groups": 5,
+              "filtered_claims": 0,
+              "candidates": {
+                "OH_city_07": 5.8750315758163545
+              }
+            },
+            "state": {
+              "attribute": "state",
+              "accepted": "OH",
+              "margin": 5.3536351172488565,
+              "top_score": 5.8750315758163545,
+              "second_score": 0.5213964585674982,
+              "independent_groups": 5,
+              "filtered_claims": 0,
+              "candidates": {
+                "OH": 5.8750315758163545,
+                "GA": 0.5213964585674982
+              }
+            },
+            "zip": {
+              "attribute": "zip",
+              "accepted": "10607",
+              "margin": 4.467398288672692,
+              "top_score": 5.431913161528272,
+              "second_score": 0.9645148728555798,
+              "independent_groups": 5,
+              "filtered_claims": 0,
+              "candidates": {
+                "10607": 5.431913161528272,
+                "10640": 0.9645148728555798
+              }
+            },
+            "category": {
+              "attribute": "category",
+              "accepted": "furniture",
+              "margin": 5.3536351172488565,
+              "top_score": 5.8750315758163545,
+              "second_score": 0.5213964585674982,
+              "independent_groups": 5,
+              "filtered_claims": 0,
+              "candidates": {
+                "furniture": 5.8750315758163545,
+                "auto": 0.5213964585674982
+              }
+            },
+            "revenue": {
+              "attribute": "revenue",
+              "accepted": 287092,
+              "margin": 1.4540328001975151,
+              "top_score": 1.91195663406572,
+              "second_score": 0.4579238338682048,
+              "independent_groups": 5,
+              "filtered_claims": 1,
+              "candidates": {
+                "287092": 1.91195663406572,
+                "267061": 0.4579238338682048
+              }
+            },
+            "employees": {
+              "attribute": "employees",
+              "accepted": 3,
+              "margin": 1.91195663406572,
+              "top_score": 1.91195663406572,
+              "second_score": 0.0,
+              "independent_groups": 5,
+              "filtered_claims": 1,
+              "candidates": {
+                "3": 1.91195663406572
+              }
+            }
+          },
+          "source_count": 7,
+          "record_count": 7,
+          "constraint_actions": []
+        }
+      }
+    }
+  },
+  "sample_parc_output": [
+    {
+      "name": "Aster Market 0000",
+      "city": "OH_city_07",
+      "state": "OH",
+      "zip": "10607",
+      "category": "furniture",
+      "revenue": 287092,
+      "employees": 3,
+      "cluster": "K:E00000",
+      "cluster_true_eid": 0,
+      "cluster_purity": 1.0,
+      "record_count": 7,
+      "source_count": 7
+    },
+    {
+      "name": "Cedar Market 0001",
+      "city": "CA_city_05",
+      "state": "CA",
+      "zip": "10005",
+      "category": "grocery",
+      "revenue": 127892,
+      "employees": 1,
+      "cluster": "K:E00001",
+      "cluster_true_eid": 1,
+      "cluster_purity": 1.0,
+      "record_count": 7,
+      "source_count": 7
+    },
+    {
+      "name": "River Market 0002",
+      "city": "IL_city_00",
+      "state": "IL",
+      "zip": "10400",
+      "category": "furniture",
+      "revenue": 388820,
+      "employees": 3,
+      "cluster": "K:E00002",
+      "cluster_true_eid": 2,
+      "cluster_purity": 1.0,
+      "record_count": 9,
+      "source_count": 9
+    },
+    {
+      "name": "Nova Market 0003",
+      "city": "IL_city_04",
+      "state": "IL",
+      "zip": "10404",
+      "category": "office",
+      "revenue": 157374,
+      "employees": 2,
+      "cluster": "K:E00003",
+      "cluster_true_eid": 3,
+      "cluster_purity": 1.0,
+      "record_count": 9,
+      "source_count": 9
+    },
+    {
+      "name": "Summit Market 0004",
+      "city": "WA_city_01",
+      "state": "WA",
+      "zip": "10301",
+      "category": "pet",
+      "revenue": 191742,
+      "employees": 1,
+      "cluster": "K:E00004",
+      "cluster_true_eid": 4,
+      "cluster_purity": 1.0,
+      "record_count": 8,
+      "source_count": 8
+    }
+  ],
+  "sample_records": [
+    {
+      "rid": "S00_R000000",
+      "source": "S00",
+      "source_idx": 0,
+      "declared_group": "G0",
+      "true_group": "G0",
+      "declared_trust": 0.9564715337482061,
+      "eid_true": 0,
+      "obs_key": "E00000",
+      "name": "Aster Market 0000",
+      "city": "OH_city_07",
+      "state": "GA",
+      "zip": "10607",
+      "category": "auto",
+      "revenue": 3,
+      "employees": 333710,
+      "attacked": true,
+      "attack_types": "schema_mapping",
+      "is_duplicate": false
+    },
+    {
+      "rid": "S00_R000002",
+      "source": "S00",
+      "source_idx": 0,
+      "declared_group": "G0",
+      "true_group": "G0",
+      "declared_trust": 0.9564715337482061,
+      "eid_true": 2,
+      "obs_key": "E00002",
+      "name": "River Market 0002",
+      "city": "IL_city_00",
+      "state": "IL",
+      "zip": "10400",
+      "category": "furniture",
+      "revenue": 3,
+      "employees": 589969,
+      "attacked": true,
+      "attack_types": "schema_mapping",
+      "is_duplicate": false
+    },
+    {
+      "rid": "S00_R000003",
+      "source": "S00",
+      "source_idx": 0,
+      "declared_group": "G0",
+      "true_group": "G0",
+      "declared_trust": 0.9564715337482061,
+      "eid_true": 3,
+      "obs_key": "E00003",
+      "name": "Nova Market 0003",
+      "city": "IL_city_04",
+      "state": "NY",
+      "zip": "10404",
+      "category": "apparel",
+      "revenue": 1,
+      "employees": 157374,
+      "attacked": true,
+      "attack_types": "schema_mapping",
+      "is_duplicate": false
+    },
+    {
+      "rid": "S00_R000004",
+      "source": "S00",
+      "source_idx": 0,
+      "declared_group": "G0",
+      "true_group": "G0",
+      "declared_trust": 0.9564715337482061,
+      "eid_true": 4,
+      "obs_key": "E00004",
+      "name": "Summit Market 0004",
+      "city": "WA_city_01",
+      "state": "WA",
+      "zip": "10326",
+      "category": "pet",
+      "revenue": 1,
+      "employees": 191742,
+      "attacked": true,
+      "attack_types": "schema_mapping",
+      "is_duplicate": false
+    },
+    {
+      "rid": "S00_R000006",
+      "source": "S00",
+      "source_idx": 0,
+      "declared_group": "G0",
+      "true_group": "G0",
+      "declared_trust": 0.9564715337482061,
+      "eid_true": 6,
+      "obs_key": "E00006",
+      "name": "MapleMarket0006",
+      "city": "CA_city_05",
+      "state": "PA",
+      "zip": "10005",
+      "category": "auto",
+      "revenue": 6,
+      "employees": 478732,
+      "attacked": true,
+      "attack_types": "schema_mapping",
+      "is_duplicate": false
+    },
+    {
+      "rid": "S00_R000007",
+      "source": "S00",
+      "source_idx": 0,
+      "declared_group": "G0",
+      "true_group": "G0",
+      "declared_trust": 0.9564715337482061,
+      "eid_true": 7,
+      "obs_key": "E00007",
+      "name": "Atlas Market 0007",
+      "city": "CA_city_04",
+      "state": "CA",
+      "zip": "10039",
+      "category": "pharmacy",
+      "revenue": 1,
+      "employees": 154434,
+      "attacked": true,
+      "attack_types": "schema_mapping",
+      "is_duplicate": false
+    },
+    {
+      "rid": "S00_R000009",
+      "source": "S00",
+      "source_idx": 0,
+      "declared_group": "G0",
+      "true_group": "G0",
+      "declared_trust": 0.9564715337482061,
+      "eid_true": 9,
+      "obs_key": "E00042",
+      "name": "Prairie Market 0009",
+      "city": "TX_city_00",
+      "state": "CA",
+      "zip": "10100",
+      "category": "office",
+      "revenue": 1,
+      "employees": 176438,
+      "attacked": true,
+      "attack_types": "fd_violation;join_key;schema_mapping",
+      "is_duplicate": false
+    },
+    {
+      "rid": "S00_R000010",
+      "source": "S00",
+      "source_idx": 0,
+      "declared_group": "G0",
+      "true_group": "G0",
+      "declared_trust": 0.9564715337482061,
+      "eid_true": 10,
+      "obs_key": "E00010",
+      "name": "beacon market 0010",
+      "city": "OH_city_06",
+      "state": "OH",
+      "zip": "10606",
+      "category": "pet",
+      "revenue": 3,
+      "employees": 327079,
+      "attacked": true,
+      "attack_types": "schema_mapping",
+      "is_duplicate": false
+    }
+  ]
+}
