@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create camera-ready figures and paper tables for PARC.
+"""Create publication-quality figures and paper tables for PARC.
 
 The plotting code is intentionally conservative: vector PDF output, embedded
 fonts, colorblind-safe palettes, line styles that survive grayscale printing,
@@ -144,7 +144,7 @@ def plot_corruption_model(fig_dir: Path) -> None:
     """Compile the architecture figure from its TikZ source.
 
     The conceptual figure is maintained as a standalone LaTeX/TikZ source file
-    rather than as a raster drawing; it remains a TikZ vector diagram.  Recompiling it keeps the camera-ready PDF
+    rather than as a raster drawing; it remains a TikZ vector diagram. Recompiling it keeps the paper PDF
     crisp while preserving the exact visual source in the artifact.
     """
     fig_dir.mkdir(parents=True, exist_ok=True)

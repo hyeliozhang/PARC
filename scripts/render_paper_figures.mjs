@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * Regenerate camera-ready PARC figures without a Python or TeX dependency.
+ * Regenerate PARC paper figures without a Python or TeX dependency.
  *
  * The script reads the checked-in CSV result tables and writes SVG sources,
  * high-resolution PNG files used by the paper, HTML renderers, and Chrome PDF

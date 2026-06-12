@@ -20,18 +20,17 @@ def test_adversarial_search_frontier_evidence_present():
     assert float(parc["aggregate_distortion_mean"]) <= float(dep["aggregate_distortion_mean"]) + 1e-12
 
 
-def test_public_artifact_excludes_manuscript_and_submission_files():
+def test_public_artifact_excludes_manuscript_and_archive_files():
     forbidden = [
         "main.tex",
         "main.pdf",
         "references.bib",
         "main.bbl",
-        "ICDE2027_SUBMISSION_NO_REPO_READY.zip",
     ]
     for name in forbidden:
         assert not (ROOT / name).exists(), name
     readme = (ROOT / "README.md").read_text()
-    assert "manuscript source and submission PDFs are intentionally excluded" in readme
+    assert "The manuscript source, bibliography, and PDF are outside this public artifact" in readme
 
 
 def test_artifact_audit_passes_after_runtime_cache_generation():
@@ -41,6 +40,7 @@ def test_artifact_audit_passes_after_runtime_cache_generation():
     (ROOT / '.pytest_cache').mkdir(exist_ok=True)
     (ROOT / 'robust_repair' / '__pycache__').mkdir(exist_ok=True)
     (ROOT / 'robust_repair' / '__pycache__' / 'dummy.pyc').write_bytes(b'cache')
+    subprocess.run([sys.executable, '-m', 'py_compile', 'scripts/audit_artifact.py'], check=True)
     subprocess.run([sys.executable, 'scripts/audit_artifact.py', '--root', '.'], check=True)
 
 

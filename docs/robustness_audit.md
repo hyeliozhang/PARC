@@ -1,12 +1,11 @@
 # Robustness Audit
 
-PARC was checked against the following artifact-level risks before public release:
+The public artifact includes checks for the following review risks.
 
-- No ground-truth leakage in SQL-fragment integration tests.
-- Held-out and stress-mode result tables are included as frozen CSV summaries.
-- Certificate and contract tables include both PARC certificates and baseline point outputs.
-- Public artifact checks exclude manuscript files, submission archives, runtime caches, and obvious credential patterns.
-- The result tables are small enough to be versioned directly with the code.
+- SQL-fragment tests exercise repaired outputs without reading hidden ground-truth columns.
+- Held-out, stress-mode, metadata-perturbation, and adversarial-search result tables are committed as CSV summaries.
+- Certificate and contract tables include PARC certificate behavior as well as baseline point-output behavior.
+- The artifact audit excludes manuscript files, archive packages, runtime caches, local absolute paths, internal workflow notes, and common credential patterns.
+- Result tables are versioned directly because they are small enough for normal Git review.
 
-Residual risk: full benchmark reruns can overwrite `data/results/`; reviewers should keep a clean checkout or branch before regeneration.
-
+Residual risk: full benchmark scripts overwrite files under `data/results/` by default. Use a clean branch or a separate output directory when comparing a regenerated run against the committed evidence tables.

@@ -1,4 +1,6 @@
 paper/
+paper_archive/
+local_release/
 .env
 .env.*
 *.key
@@ -36,5 +38,7 @@ main.bbl
 references.bib
 IEEEtran.cls
 IEEEtran.bst
-ICDE2027_SUBMISSION_NO_REPO_READY/
-
+local_notes/
+private_notes/
+*.local.md
+*_private.md

@@ -1,12 +1,12 @@
-# Proof And Reproducibility
+# Proof and Reproducibility
 
-The artifact separates three reproducibility layers:
+PARC exposes three reproducibility layers.
 
-- Core implementation: `robust_repair/`.
-- Experiment and analysis scripts: `scripts/`.
-- Frozen paper-result summaries: `data/results/`.
+1. `robust_repair/` contains the implementation of corruption generation, candidate repair, provenance-aware scoring, constraints, and metrics.
+2. `scripts/` contains the experiment drivers used to regenerate result families.
+3. `data/results/` contains the committed result tables used for paper-facing analysis and figures.
 
-For a quick repository check, run:
+For a quick check:
 
 ```powershell
 python -m pip install -r requirements.txt
@@ -14,5 +14,6 @@ python -m pytest -q
 python scripts/audit_artifact.py --root .
 ```
 
-For full regeneration, use a clean cloud/workstation environment and run the relevant scripts under `scripts/`. Record the commit hash, Python version, dependency versions, and any changed random seeds before comparing regenerated CSVs with the committed summaries.
+For full regeneration, start from a clean checkout, record the commit hash and Python version, then run the relevant script from `scripts/`. The scripts use deterministic seeds by default. When changing seeds, budgets, datasets, or methods, write outputs to a separate directory before comparing them with the committed CSV files.
 
+The artifact does not require network access, paid APIs, or private data for the quick checks. Public-tabular transfer experiments use datasets loaded through the standard Python scientific stack; keep dependency versions fixed when reproducing paper-level numbers.

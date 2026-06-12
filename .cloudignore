@@ -1,4 +1,6 @@
 paper/
+paper_archive/
+local_release/
 .env
 .env.*
 *.key
@@ -15,9 +17,10 @@ venv/
 env/
 scratch/
 local_notes/
-ICDE2027_SUBMISSION_NO_REPO_READY/
 main.pdf
 main.tex
 references.bib
 *.zip
-
+private_notes/
+*.local.md
+*_private.md

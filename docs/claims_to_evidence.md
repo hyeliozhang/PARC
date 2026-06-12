@@ -1,14 +1,16 @@
-# Claims To Evidence
+# Claims to Evidence
 
-This note maps the public artifact files to the main empirical claims.
+This note maps the main empirical claims to public artifact files. The paper text is not required to run the checks below; the repository keeps the implementation and evidence tables self-contained.
 
-| Claim family | Evidence files | Reproduction entry points |
+| Claim family | Primary evidence files | Reproduction entry points |
 | --- | --- | --- |
-| Main repair accuracy and distortion | `data/results/benchmark_results.csv`, `data/results/benchmark_summary.csv`, `data/results/headline_ci_beta35.csv` | `scripts/run_benchmark.py`, `scripts/statistical_analysis.py` |
-| Ablations and stress modes | `data/results/ablation_results.csv`, `data/results/operator_ablation_results.csv`, `data/results/stress_modes_results.csv` | `scripts/run_full_benchmark.py`, `scripts/run_adversarial_search.py` |
-| Contract and certificate behavior | `data/results/contract_grid_paper.csv`, `data/results/contract_totalnorm_summary.csv`, `data/results/certified_query_bounds_paper.csv` | `scripts/run_contract_grid.py`, `scripts/run_contract_totalnorm.py`, `scripts/certified_query_bounds.py` |
-| SQL and external-tabular robustness | `data/results/external_tabular_results.csv`, `data/results/sql_workflow_results.csv`, `data/results/sql_fragment_results.csv` | `scripts/run_external_and_sql_suite.py`, `scripts/run_sql_fragment_suite.py` |
-| Scalability and memory | `data/results/scalability_results.csv`, `data/results/runtime_memory_profile.csv`, `data/results/source_scale_parc_summary.csv` | `scripts/runtime_memory_profile.py`, `scripts/run_full_benchmark.py` |
+| Controlled corrupted-integration benchmark over 300 entities, 12 sources, five seeds, and eight adversarial budgets | `data/results/benchmark_results.csv`, `data/results/benchmark_summary.csv`, `data/results/paper_table_beta20.csv`, `data/results/paper_table_beta30.csv`, `data/results/paper_table_beta35.csv` | `scripts/run_benchmark.py --out data/results` or `scripts/run_full_benchmark.py --out data/results` |
+| Headline quality and aggregate-distortion gap at high corruption budgets | `data/results/headline_ci_beta35.csv`, `data/results/paired_statistical_tests.csv`, `data/results/negative_results_beta035.csv` | `scripts/statistical_analysis.py --results data/results` |
+| Ablations of PARC components and operator choices | `data/results/ablation_results.csv`, `data/results/ablation_summary.csv`, `data/results/operator_ablation_results.csv`, `data/results/operator_ablation_summary.csv` | `scripts/run_full_benchmark.py --out data/results` |
+| Stress behavior under adversarial modes and metadata perturbations | `data/results/stress_modes_results.csv`, `data/results/stress_modes_summary.csv`, `data/results/adversarial_search_frontier.csv`, `data/results/public_metadata_stress_results.csv`, `data/results/public_metadata_stress_sql_results.csv` | `scripts/run_adversarial_search.py --out data/results`, `scripts/run_public_metadata_stress.py --out data/results` |
+| Contract and certificate behavior | `data/results/contract_grid_paper.csv`, `data/results/contract_totalnorm_summary.csv`, `data/results/certified_query_bounds_paper.csv`, `data/results/certificate_calibration_summary.csv`, `data/results/certificate_margin_calibration.csv` | `scripts/run_contract_grid.py --out_dir data/results`, `scripts/run_contract_totalnorm.py --out_dir data/results`, `scripts/certified_query_bounds.py --out_dir data/results`, `scripts/certificate_calibration.py --out data/results` |
+| Public-tabular transfer and SQL-workflow robustness | `data/results/external_tabular_results.csv`, `data/results/external_tabular_overall.csv`, `data/results/sql_workflow_results.csv`, `data/results/sql_workflow_overall.csv`, `data/results/sql_fragment_results.csv`, `data/results/sql_fragment_overall.csv` | `scripts/run_external_and_sql_suite.py --out data/results`, `scripts/run_sql_fragment_suite.py --out data/results` |
+| Runtime, memory, and source-count scaling | `data/results/scalability_results.csv`, `data/results/scalability_summary.csv`, `data/results/runtime_memory_profile.csv`, `data/results/source_scale_parc_results.csv`, `data/results/source_scale_parc_summary.csv`, `data/results/large_scale_3000_results.csv` | `scripts/run_benchmark.py --out data/results`, `scripts/runtime_memory_profile.py --out data/results/runtime_memory_profile.csv` |
+| Figures and paper-facing tables | `figures/*.pdf`, `figures/*.png`, `figures/*.svg`, `data/results/*paper*.csv`, `data/results/*table*.csv` | `scripts/plot_results.py --results data/results --figures figures --tables data/results` |
 
-The public repository intentionally excludes manuscript source and submission PDFs. This evidence map is the repository-level bridge from claims to reproducible files.
-
+The fastest sanity path is `python -m pytest -q` followed by `python scripts/audit_artifact.py --root .`. Full benchmark regeneration may overwrite committed CSV files, so compare from a clean branch or a separate checkout.

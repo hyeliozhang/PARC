@@ -9,7 +9,7 @@ heldout_close_to_strong_baseline,PASS,PARC within 0.01 of strong baseline on 6/6
 heldout_sql_beats_no_repair,PASS,PARC lower query distortion than no_repair on 24/24 held-out SQL cases
 paper_no_hidden_truth_patterns,PASS,no hidden-truth SQL patterns in paper
 code_no_cluster_true_eid_rename_for_sql,PASS,no rename of cluster_true_eid into SQL eid detected
-camera_ready_vector_figures,PASS,"pdf_includes=['corruption_model', 'accuracy_budget', 'aggregate_distortion_budget', 'trust_sensitivity', 'runtime_scalability']; missing=[]; png_includes=[]"
+vector_figure_exports,PASS,"pdf_includes=['corruption_model', 'accuracy_budget', 'aggregate_distortion_budget', 'trust_sensitivity', 'runtime_scalability']; missing=[]; png_includes=[]"
 public_contract_coverage_beta20,PASS,"coverage=1.000, total_norm_width=0.0097"
 source_count_scalability_present,PASS,"sources=[6, 12, 18, 24, 30, 36]; records 1.21K->7.15K; PARC runtime 1.12s->1.83s; max-source throughput=3909 records/s"
 large_3000_stress_present,PASS,"PARC 3000-entity stress runtime=10.07s; records=23.98K; throughput=2383 records/s; methods=['dependency_truth', 'majority', 'parc']"

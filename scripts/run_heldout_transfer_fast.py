@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Held-out public-tabular and SQL transfer check for submission audit.
+"""Held-out public-tabular and SQL transfer check for artifact review.
 
 This intentionally uses seeds and budgets not used in the paper headline tables.
 It is meant to catch overfitting or cherry-picking: PARC is compared against the
